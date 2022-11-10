@@ -1,0 +1,162 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="assets/img/g1.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="assets/img/g2.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+	  <img src="assets/img/g3.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="assets/img/g4.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+      <img src="assets/img/g5.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+      <img src="assets/img/g6.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="assets/img/g7.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="assets/img/g8.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+      <img src="assets/img/g9.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="assets/img/g10.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+      <img src="assets/img/g11.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="assets/img/g12.jpg" style="width:100%" onclick="onClick(this)" alt="Landscape, flowers, nature ..">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&laquo;</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Us</b></h4>
+    <img src="assets/img/aboutus.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>About Us</h4>
+      <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <hr class="w3-opacity">
+
+      <div class="w3-row-padding" style="margin:0 -16px">
+		
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Us</b></h4>
+      <p>Fill out the form and fill us in with the details :) Would be great to meet!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="assets/img/white.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Landscape</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="assets/img/white2.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Wildlife</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Landscape</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wildlife</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Seal diving</span>
+		  <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sea Turtle swimming</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wind turbines</span><span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Solar panels</span><span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sand storage batteries</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Butterfly spotting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bird spotting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Green houses</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Squirrel spotting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> 
+
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Greenology</div>
+
+<!-- End page content -->
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
